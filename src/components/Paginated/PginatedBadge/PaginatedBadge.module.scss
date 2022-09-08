@@ -1,0 +1,35 @@
+.badge {
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--black-color);
+    }
+
+    &__list {
+        display: flex;
+        padding-left: 20px;
+        column-gap: 12px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--white-color);
+        background-color: var(--grey-color);
+        cursor: pointer;
+
+        &_active {
+            background-color: var(--green-color);
+        }
+    }
+}

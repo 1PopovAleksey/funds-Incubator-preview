@@ -1,0 +1,24 @@
+@import '../../../scss/mixins';
+
+.whyus {
+  background-color: var(--grey-2-color);
+}
+
+.offset {
+  padding: 64px 0 110px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include section-container;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 997px;
+  margin: 64px auto 0;
+}

@@ -1,0 +1,16 @@
+@import "../../../scss/mixins.scss";
+
+.box {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 80px - 120px - 155px);
+    padding-bottom: 65px;
+    background: linear-gradient(180deg, #c2f0ff 0%, #f5fdff 85.71%);
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,76 @@
+@import "../../../scss/mixins.scss";
+
+.pagination__box {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    padding-top: 32px;
+    @include section-container;
+    user-select: none;
+}
+
+.pagination__list {
+    position: relative;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.pagination__item {
+    min-width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.pagination__item_arrow {
+    position: absolute;
+    height: 18px;
+    width: 10px;
+    background-image: url("../../../assets/img/pagination/arrow.png");
+    background-repeat: no-repeat;
+
+    &_left {
+        top: 2px;
+        left: 0;
+        transform: scale(-1, 1)
+    }
+
+    &_right {
+        top: 2px;
+        right: 0;
+    }
+}
+
+.pagination__item_arrow-dec {
+    background-image: url("../../../assets/img/pagination/arrow-d.png");
+}
+
+.pagination__link {
+    display: block;
+    font-weight: 400;
+    color: var(--grey-color);
+    cursor: pointer;
+
+    &_active {
+        color: var(--green-color);
+    }
+}
+
+.pagination__link_arrow {
+    width: 10px;
+    height: 100%;
+    font-size: 25px;
+}
+
+.pagination__display {
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey-color);
+}

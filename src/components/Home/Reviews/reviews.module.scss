@@ -1,0 +1,24 @@
+@import '../../../scss/mixins';
+
+.reviews {
+  background-color: linear-gradient(180deg, #feffff 0%, #feffff 85.71%);
+}
+
+.offset {
+  padding: 64px 0 110px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1265px;
+}
+
+.mySwiper {
+  position: static;
+  margin: 64px auto 0;
+  width: 1200px;
+  z-index: 20;
+}

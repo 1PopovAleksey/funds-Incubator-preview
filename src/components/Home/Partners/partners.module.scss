@@ -1,0 +1,27 @@
+@import '../../../scss/mixins';
+
+.partners {
+  background-color: var(--grey-2-color);
+}
+
+.offset {
+  padding: 64px 0 110px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  @include section-container;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 91px;
+  row-gap: 48px;
+  width: 1000px;
+  margin: 93px auto 0;
+}

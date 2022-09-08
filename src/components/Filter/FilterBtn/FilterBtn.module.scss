@@ -1,0 +1,31 @@
+.filter__btn {
+    position: relative;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 37px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black-color);
+    background-color: var(--white-color);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        bottom: 0;
+        width: 14px;
+        height: 14px;
+        background-image: url("../../../assets/img/filter/filter.svg");
+        background-repeat: no-repeat;
+    }
+
+    &_active {
+        color: var(--white-color);
+        background-color: var(--grey-color);
+
+        &::before {
+            background-image: url("../../../assets/img/filter/filter-active.svg");
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import '../../../scss/mixins';
+
+.services {
+  background: linear-gradient(180deg, #c2f0ff 0%, #f5fdff 85.71%);
+}
+
+.offset {
+  padding: 128px 0 64px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include section-container;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px 0 0;
+}

@@ -1,0 +1,53 @@
+@import '../../../scss/mixins';
+
+.hero {
+  background: linear-gradient(90.1deg, #fff 18.88%, rgb(255 255 255 / 0%) 99.92%),
+    url('../../../assets/img/home/hero.png') no-repeat center right;
+}
+
+.offset {
+  padding: 167px 0;
+}
+
+.container {
+  @include section-container;
+}
+
+.content {
+  margin: 0 0 0 100px;
+  width: 445px;
+}
+
+.title {
+  margin: 0 0 24px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--black-color);
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--black-color);
+
+  &:first-of-type {
+    margin: 0 0 15px;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 56px;
+  margin: 88px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--white-color);
+  background: var(--green-color);
+  border-radius: 20px;
+}

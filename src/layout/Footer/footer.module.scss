@@ -1,0 +1,105 @@
+@import '../../scss/mixins';
+
+.offset {
+  padding: 25px 0;
+  background: var(--blue-color);
+}
+
+.container {
+  @include section-container;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 42px;
+
+  li:not(:last-child) {
+    margin: 0 16px 0 0;
+  }
+}
+
+.links {
+  margin: 18px 0 0;
+
+  a {
+    font-size: 14px;
+    font-weight: 400;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    line-height: 17px;
+    color: var(--black-color);
+
+    &:first-child {
+      padding: 0 17px 0 0;
+      margin: 0 17px 0 0;
+      border-right: 1px solid var(--black-color);
+    }
+  }
+}
+
+.nav {
+  display: flex;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin: 0 32px 0 0;
+    }
+
+    li {
+      width: min-content;
+      height: min-content;
+
+      &:not(:last-child) {
+        margin: 0 0 8px;
+      }
+
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        color: var(--black-color);
+      }
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 41px 0 0;
+
+  span {
+    margin: 0 35px 0 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: var(--black-color);
+  }
+}
+
+.politics {
+  margin: 0 48px 0 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  color: var(--black-color);
+}

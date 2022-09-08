@@ -1,0 +1,14 @@
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 56px;
+  margin: 64px auto 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--white-color);
+  background: var(--green-color);
+  border-radius: 20px;
+}
